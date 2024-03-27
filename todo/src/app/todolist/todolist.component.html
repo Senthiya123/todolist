@@ -1,0 +1,34 @@
+<div class="container">
+    <h1> To-Do-List Application </h1>
+    <hr>
+    
+    <!-- Add Task Form -->
+    <form (ngSubmit)="addTask()">
+      <div class="form-group">
+        <label for="task">Task</label>
+        <input type="text" class="form-control" id="task" placeholder="Enter task" [(ngModel)]="newTask.task" name="task">
+        <small id="errorMessage" class="form-text text-danger">Required field</small>
+      </div>
+      <button id="submitButton" type="submit" class="btn btn-primary">Add Task</button>
+    </form>
+    <hr>
+    
+    <!-- Task List -->
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col" class ="taskItem">Task List</th>
+          <th scope="col"></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let task of tasks">
+          <td class="taskItem">{{ task.task }} </td>
+          <td class="deleteButtonContainer">
+            <button class="btn-delete" (click)="deleteTask(task)">Delete</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  
