@@ -1,3 +1,46 @@
+# ToDo Angular Frontend
+
+## Description
+This project is a frontend application for managing todo lists. It allows users to add, and delete tasks in their todo lists.
+
+## Installation
+1. Clone the repository to your local machine.
+2. Navigate to the project directory.
+3. Run `npm install` to install project dependencies.
+4. Run `ng serve` to start the development server.
+5. Open your browser and navigate to `http://localhost:4200/` to view the application.
+
+## Usage
+- To add a new task, enter the task in the input field and click the "Add Task" button.
+- To delete a task, click the "Delete" button next to the task.
+
+## Technologies Used
+- Angular
+- TypeScript
+- HTML
+- CSS
+
+## Folder Structure
+```
+todolist/
+│
+├── src/                      # Source files
+│   ├── app/                  # Angular components and services
+│   │   ├── app.component.html         # Main component template
+│   │   ├── app.component.ts           # Main component logic
+│   │   ├── todolist/                   # Todo list component
+│   │   │   ├── todolist.component.html   # Todo list component template
+│   │   │   ├── todolist.component.ts     # Todo list component logic
+│   │   ├── todo.service.ts         # Service for managing todo items
+│   ├── assets/               # Static assets (images, icons, etc.)
+├── node_modules/             # Node.js modules (ignored by Git)
+├── .gitignore                # Specifies intentionally untracked files to ignore
+├── package.json              # Metadata about the project and its dependencies
+├── README.md                 # This README file
+```
+
+-----------------------------------------------------------------------------------------------------------------------------------
+
 # TodoList API Backend
 
 This is the backend for a TodoList application, built using ASP.NET Core Web API.
