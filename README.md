@@ -1,4 +1,4 @@
-# ToDo Angular Frontend
+# Todo Angular Frontend
 
 ## Description
 This project is a frontend application for managing todo lists. It allows users to add, and delete tasks in their todo lists.
